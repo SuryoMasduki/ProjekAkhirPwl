@@ -9,7 +9,7 @@ use App\Http\Controllers\ClassController;
 use App\Http\Controllers\SectionController;
 
 Route::get('/', function () {
-    return Inertia::render('Welcome', [
+    return Inertia::render('Auth/Register', [
         'canLogin' => Route::has('login'),
         'canRegister' => Route::has('register'),
         'laravelVersion' => Application::VERSION,
